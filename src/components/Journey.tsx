@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import Image from 'next/image';
 import { gsap } from 'gsap'
 import ScrollTrigger from "gsap/ScrollTrigger";
 import {AiFillHeart} from 'react-icons/ai'
@@ -22,7 +23,7 @@ const journyCards = [
     { 
       date:"February 2022", 
       hilights:[
-        <div className='inline-block'>Start studying at Platzi (One of the best decissions of my life)<span className='inline'><AiFillHeart className='inline-block' color='#7AB800' size={20}/></span></div>,
+        <div key={'uniqueeeeeeekeeeyyy'} className='inline-block'>Start studying at Platzi (One of the best decissions of my life)<span className='inline'><AiFillHeart className='inline-block' color='#7AB800' size={20}/></span></div>,
         "New freelance job for Bocadictos Bakery",
         "Learn mobile development with React Native to create Bocadictos' app.",
       ]
@@ -97,9 +98,9 @@ export const Journey = () => {
       <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
         <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
           <p className="ml-2 text-purple-100 font-bold uppercase tracking-loose">My Journey or,</p>
-          <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">My Life's Bytes</p>
+          <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">My Life&apos;s Bytes</p>
           <p className="text-sm md:text-base text-gray-50 mb-4">
-            The journey of a thousand bytes begins with one "hello World". Here is the line by line of How 
+            The journey of a thousand bytes begins with one &quot;hello World&quot;. Here is the line by line of How 
             have I been coding my life the last few years.
           </p>
           {/* <a href="#" className="bg-transparent mr-auto hover:bg-purple-300 text-purple-100 font-bold hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-purple-300 hover:border-transparent">
@@ -128,12 +129,10 @@ export const Journey = () => {
                         </div>
                     </div>
                 )) }
-
-              
-              
-             
             </div>
-            <img className="mx-auto -mt-36 md:-mt-36" src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png" />
+            <div>
+
+            </div>
           </div>
         </div>
       </div>

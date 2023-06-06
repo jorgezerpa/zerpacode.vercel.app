@@ -31,7 +31,7 @@ export const Portfolio = () => {
         <div className="inline-block px-6">
           <h2 className="mt-20 md:mt-0 text-gray-800 text-center md:text-left font-black text-2xl lg:text-3xl mb-5">Quick Projects</h2>
           <p className="text-gray-600 text-center md:text-left font-semibold text-md max-w-[420px]">
-            "Sunday made" projects. This Section is a laboratory of Crazy design ideas, videogames, etc.                 
+          &quot;Sunday made&quot; projects. This Section is a laboratory of Crazy design ideas, videogames, etc.                 
           </p>
           <Link href={'/quick-projects'} className="flex justify-center md:justify-start">
             <div className="hover:scale-105 hover:shadow-md hover:shadow-gray-700 mt-5 inline-block bg-purple-700 text-white px-4 py-2 font-bold rounded-lg">See projects</div>

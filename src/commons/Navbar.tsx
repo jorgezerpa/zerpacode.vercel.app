@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { useRouter, usePathname } from 'next/navigation'
 import {IoMdCloseCircle} from 'react-icons/io'
 
@@ -42,7 +43,13 @@ export const Navbar = () => {
       <div className="flex lg:flex-1">
         <div onClick={()=>{router.push('/')}} className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
-          <img className="h-6 sm:h-8 w-auto" src="/icons/logo.svg" alt="" />
+          <div className="h-6 sm:h-8 w-24 relative">
+            <Image
+            width={0}
+            height={0}
+            style={{ width: '100%', height: 'auto' }}
+            src="/icons/logo.svg" alt="" />
+          </div>
         </div>
       </div>
       <div className="flex lg:hidden">

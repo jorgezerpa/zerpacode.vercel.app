@@ -1,12 +1,10 @@
 import { useInView } from 'react-intersection-observer'
-import { SiReact, SiFlutter, SiTailwindcss, SiCss3, SiJavascript, SiTypescript, SiAngularjs, SiThreedotjs } from 'react-icons/si'
+import Image from 'next/image'
+import { SiReact, SiFlutter, SiTailwindcss, SiCss3, SiJavascript, SiTypescript, SiThreedotjs } from 'react-icons/si'
 import { FaRust } from 'react-icons/fa'
 import { TbBrandNextjs, TbBrandHtml5 } from 'react-icons/tb'
-import { FaNodeJs, FaAws, FaLaravel, FaWordpressSimple, FaFigma } from 'react-icons/fa'
+import { FaNodeJs, FaWordpressSimple, FaFigma } from 'react-icons/fa'
 import { BsBootstrap } from 'react-icons/bs'
-import { DiPhp } from 'react-icons/di'
-
-
 
 let skills = [
   { type: 'lang',name:'HTML', icon:<TbBrandHtml5 size={24}  /> },
@@ -70,7 +68,7 @@ export const Skills = () => {
                       <div className="font-semibold w-full flex justify-center items-center">{skill.name}</div>
                       <div>
                         {typeof skill.icon==='string'   
-                          ? <img alt="" src={skill.icon} width={25} height={25} /> 
+                          ? <Image alt="" src={skill.icon} width={25} height={25} /> 
                           : skill.icon
                         }
                       </div>
