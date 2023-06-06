@@ -17,9 +17,9 @@ export const Contact = () => {
                         <span className={`${inViewIcon1 && 'animate-zoomInSpin'} opacity-0`}><img width="30px" src="/icons/linkedin.png" alt="" /></span>
                         <span className={`${inViewIcon1 && 'animate-[scaleX_1s_ease_forwards_1s]'} origin-left opacity-0`}>jorge-zerpa-code</span>
                     </a>
-                    <a ref={refIcon2} target='black' href="https://www.instagram.com/zerpa.code/" className="flex gap-1 mt-2 font-bold rounded-lg">
+                    <a ref={refIcon2} target='black' href="https://www.instagram.com/zerpacode/" className="flex gap-1 mt-2 font-bold rounded-lg">
                         <span className={`${inViewIcon2 && 'animate-zoomInSpin'} opacity-0`}><img width="30px" src="/icons/instagram.png" alt="" /></span>
-                        <span className={`${inViewIcon2 && 'animate-[scaleX_1s_ease_forwards_1s]'} origin-left opacity-0`}>@zerpa.code</span>
+                        <span className={`${inViewIcon2 && 'animate-[scaleX_1s_ease_forwards_1s]'} origin-left opacity-0`}>@zerpacode</span>
                     </a>
                     <a ref={refIcon3} target='black' href="#" className="flex gap-1 mt-2 font-bold rounded-lg">
                         <span className={`${inViewIcon3 && 'animate-zoomInSpin'} opacity-0`}><img width="30px" src="/icons/email.png" alt="" /></span>
