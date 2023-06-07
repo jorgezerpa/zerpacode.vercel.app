@@ -12,7 +12,9 @@ const page = () => {
                     <p className=' text-gray-700 mb-4'>{project.description}</p>
                     <div className='absolute bottom-0 left-0 right-0 flex'>
                         <a href={project.github} target='_blank' className='w-full border border-gray-200 text-center py-2 font-bold text-gray-800 hover:bg-gray-200 hover:text-sm transition-all'>Github</a>
-                        {/* <div className='w-full border border-gray-200 text-center py-2 font-bold text-gray-800 hover:bg-gray-200 hover:text-sm transition-all'>Github</div> */}
+                        { project.project && (
+                            <a href={project.project} target='_blank' className='w-full border border-gray-200 text-center py-2 font-bold text-gray-800 hover:bg-gray-200 hover:text-sm transition-all'>Project</a>
+                        ) }
                     </div>
                 </div>
             </div>
