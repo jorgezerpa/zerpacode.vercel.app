@@ -68,6 +68,14 @@ export const personalProjects:ProjectsType[] = [
 
   export const quickProjects:ProjectsType[] = [
     {
+        title:'Space Calm',
+        description: '',
+        image: 'spacecaml.png',
+        github: 'https://github.com/jorgezerpa/space-calm',        
+        project: 'https://space-calm.vercel.app/',
+        tecnologies: []        
+    },
+    {
         title:'Real Life Art Gallery',
         description: '',
         image: 'Captura_de_pantalla_30_tm2q6f.png',
@@ -97,14 +105,6 @@ export const personalProjects:ProjectsType[] = [
         image: 'Captura_de_pantalla_33_wtyqch.png',
         github: 'https://github.com/jorgezerpa/app-landing-page',        
         project: 'https://jorgezerpa.github.io/app-landing-page/',
-        tecnologies: ['typescript']        
-    },
-    {
-        title:'Designer Portfolio',
-        description: '',
-        image: 'designer-portfolio.png',
-        github: 'https://github.com/jorgezerpa/designer-page',        
-        project: 'https://jorgezerpa.github.io/designer-page/',
         tecnologies: ['typescript']        
     },
     {
